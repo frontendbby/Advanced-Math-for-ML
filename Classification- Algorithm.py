@@ -1,26 +1,5 @@
-###################################################
-# UNIVERSIDAD POLITECNICA METROPILITANA DE HIDALGO
-# ASIGNATURA:         MATEMÁTICAS PARA LA IA
-# AUTORES:            J. Gerhard C. Spross
-# EQUIPO 2            Cain Hernández Angeles
-#                    Jorge Israel Pérez Pisceno
-#                    Jessica Melani Romero Lora
-#
-# OBJETIVO:          Utilizar la librería numpy y pandas para modelear problemas de clasificación
-#
-# Entrada:           Archivo tipo csv donde se encuentran los datos a utilizar en el modelo.
-# Salida:            Estado de la solución con los pesos w0, w1, ..., wk y el error E.
-#
-####################################################
-
-
 import numpy as np
 import pandas as pd
-
-# ====================================================================
-# CONFIGURACIÓN DE DESCARGA
-# ====================================================================
-# URL RAW DE TU REPOSITORIO DE GITHUB
 url = "https://raw.githubusercontent.com/GerhardSpross/clasificacion-prueba/refs/heads/main/wdbc.data"
 df = pd.read_csv(url, header=None)
 df.head(10)
